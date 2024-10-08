@@ -37,11 +37,11 @@ let array_1 = [
             if (Array.isArray(elementoArray)) { // siete stati davvero cattivi ad annidare tre array
               for (let m = 0; m < elementoArray.length; m++) {
                 if (elementoArray[m].toLowerCase() === parola) {
-                  console.log(`La parola "${frase[i]}" si trova nell'array ${j + 1}, posizione ${k}, indice ${m} (subArray annidato).`);
+                  console.log(`La parola "${frase[i]}" si trova in: array_${j + 1}[${k}][${l}][${m}] (subArray annidato).`);
                 }
               }
             } else if (elementoArray.toLowerCase() === parola) {
-              console.log(`La parola "${frase[i]}" si trova nell'array ${j + 1}, posizione ${k}, indice ${l}.`);
+              console.log(`La parola "${frase[i]}" si trova in: array_${j + 1}[${k}][${l}]`);
             }
           }
         } //
